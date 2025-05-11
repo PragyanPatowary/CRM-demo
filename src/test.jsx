@@ -38,10 +38,20 @@ const Test = () => {
               </div>
             </li>{/*end topbar-language*/}
             <li className="topbar-item">
-              <a className="nav-link nav-icon" href="javascript:void(0);" id="light-dark-mode">
-                <i className="icofont-moon dark-mode" />
-                <i className="icofont-sun light-mode" />
-              </a>                    
+             <a
+  className="nav-link nav-icon"
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    // Toggle light/dark theme logic here
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute("data-bs-theme");
+    html.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
+  }}
+>
+  <i className="icofont-moon dark-mode" />
+  <i className="icofont-sun light-mode" />
+</a>                   
             </li>
             <li className="dropdown topbar-item">
               <a className="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -717,20 +727,11 @@ const Test = () => {
                 </ul>{/*end nav*/}
               </div>{/*end startbarAuthentication*/}
             </li>{/*end nav-item*/}
-          </ul>{/*end navbar-nav-*/}
-          <div className="update-msg text-center"> 
-            <div className="d-flex justify-content-center align-items-center thumb-lg update-icon-box  rounded-circle mx-auto">
-              <i className="iconoir-peace-hand h3 align-self-center mb-0 text-primary" />
-            </div>                   
-            <h5 className="mt-3">Mannat Themes</h5>
-            <p className="mb-3 text-muted">Rizz is a high quality web applications.</p>
-            <a href="javascript: void(0);" className="btn text-primary shadow-sm rounded-pill">Upgrade your plan</a>
-          </div>
+          </ul>{/*end navbar-nav-*/}                 
         </div>
       </div>{/*end startbar-collapse*/}
     </div>{/*end startbar-menu*/}    
   </div>{/*end startbar*/}
-  <div className="startbar-overlay d-print-none" />
   {/* end leftbar-tab-menu*/}
 </div>
 
