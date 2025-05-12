@@ -1,5 +1,10 @@
 import React from 'react'
 
+
+
+
+
+
 const Test = () => {
   return (
     <>
@@ -9,11 +14,11 @@ const Test = () => {
       <div className="container-xxl">
         <nav className="topbar-custom d-flex justify-content-between" id="topbar-custom">    
           <ul className="topbar-item list-unstyled d-inline-flex align-items-center mb-0">                        
-            <li>
+            {/* <li>
               <button className="nav-link mobile-menu-btn nav-icon" id="togglemenu">
                 <i className="iconoir-menu-scale" />
               </button>
-            </li> 
+            </li>  */}
             <li className="mx-3 welcome-text">
               <h3 className="mb-0 fw-bold text-truncate">Good Morning, James!</h3>
               {/* <h6 class="mb-0 fw-normal text-muted text-truncate fs-14">Here's your overview this week.</h6> */}
@@ -26,32 +31,25 @@ const Test = () => {
                 <button type="submit"><i className="iconoir-search" /></button>
               </form>
             </li>     
-            <li className="dropdown">
-              <a className="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="assets/images/flags/us_flag.jpg" alt className="thumb-sm rounded-circle" />
-              </a>
-              <div className="dropdown-menu">
-                <a className="dropdown-item" href="#"><img src="assets/images/flags/us_flag.jpg" alt height={15} className="me-2" />English</a>
-                <a className="dropdown-item" href="#"><img src="assets/images/flags/spain_flag.jpg" alt height={15} className="me-2" />Spanish</a>
-                <a className="dropdown-item" href="#"><img src="assets/images/flags/germany_flag.jpg" alt height={15} className="me-2" />German</a>
-                <a className="dropdown-item" href="#"><img src="assets/images/flags/french_flag.jpg" alt height={15} className="me-2" />French</a>
-              </div>
-            </li>{/*end topbar-language*/}
             <li className="topbar-item">
+
+
              <a
-  className="nav-link nav-icon"
-  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    // Toggle light/dark theme logic here
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute("data-bs-theme");
-    html.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
-  }}
+                className="nav-link nav-icon"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                // Toggle light/dark theme logic here
+                const html = document.documentElement;
+                const currentTheme = html.getAttribute("data-bs-theme");
+                html.setAttribute("data-bs-theme", currentTheme === "light" ? "dark" : "light");
+            }}
 >
-  <i className="icofont-moon dark-mode" />
-  <i className="icofont-sun light-mode" />
+              <i className="icofont-moon dark-mode" />
+                <i className="icofont-sun light-mode" />
 </a>                   
+
+
             </li>
             <li className="dropdown topbar-item">
               <a className="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -60,24 +58,12 @@ const Test = () => {
               </a>
               <div className="dropdown-menu stop dropdown-menu-end dropdown-lg py-0">
                 <h5 className="dropdown-item-text m-0 py-3 d-flex justify-content-between align-items-center">
-                  Notifications <a href="#" className="badge text-body-tertiary badge-pill">
-                    <i className="iconoir-plus-circle fs-4" />
-                  </a>
+                  Notifications
                 </h5>
                 <ul className="nav nav-tabs nav-tabs-custom nav-success nav-justified mb-1" role="tablist">
                   <li className="nav-item" role="presentation">
                     <a className="nav-link mx-0 active" data-bs-toggle="tab" href="#All" role="tab" aria-selected="true">
                       All <span className="badge bg-primary-subtle text-primary badge-pill ms-1">24</span>
-                    </a>
-                  </li>
-                  <li className="nav-item" role="presentation">
-                    <a className="nav-link mx-0" data-bs-toggle="tab" href="#Projects" role="tab" aria-selected="false" tabIndex={-1}>
-                      Projects
-                    </a>
-                  </li>
-                  <li className="nav-item" role="presentation">
-                    <a className="nav-link mx-0" data-bs-toggle="tab" href="#Teams" role="tab" aria-selected="false" tabIndex={-1}>
-                      Team
                     </a>
                   </li>
                 </ul>
@@ -229,12 +215,12 @@ const Test = () => {
             </li>
             <li className="dropdown topbar-item">
               <a className="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="assets/images/users/avatar-1.jpg" alt className="thumb-lg rounded-circle" />
+                <img src="src/assets/images/users/avatar-1.jpg" alt className="thumb-lg rounded-circle" />
               </a>
               <div className="dropdown-menu dropdown-menu-end py-0">
                 <div className="d-flex align-items-center dropdown-item py-2 bg-secondary-subtle">
                   <div className="flex-shrink-0">
-                    <img src="assets/images/users/avatar-1.jpg" alt className="thumb-md rounded-circle" />
+                    <img src="src/assets/images/users/avatar-1.jpg" alt className="thumb-md rounded-circle" />
                   </div>
                   <div className="flex-grow-1 ms-2 text-truncate align-self-center">
                     <h6 className="my-0 fw-medium text-dark fs-13">William Martin</h6>
@@ -268,11 +254,11 @@ const Test = () => {
     <div className="brand">
       <a href="index.html" className="logo">
         <span>
-          <img src="assets/images/logo-sm.png" alt="logo-small" className="logo-sm" />
+          <img src="src/assets/images/logo-sm.png" alt="logo-small" className="logo-sm" />
         </span>
         <span className>
-          <img src="assets/images/logo-light.png" alt="logo-large" className="logo-lg logo-light" />
-          <img src="assets/images/logo-dark.png" alt="logo-large" className="logo-lg logo-dark" />
+          <img src="src/assets/images/logo-light.png" alt="logo-large" className="logo-lg logo-light" />
+          <img src="src/assets/images/logo-dark.png" alt="logo-large" className="logo-lg logo-dark" />
         </span>
       </a>
     </div>
@@ -301,7 +287,7 @@ const Test = () => {
                     <a className="nav-link" href="index.html">Analytics</a>
                   </li>{/*end nav-item*/}
                   <li className="nav-item">
-                    <a className="nav-link" href="ecommerce-index.html">Ecommerce</a>
+                    <a className="nav-link" hre ="ecommerce-index.html">Ecommerce</a>
                   </li>{/*end nav-item*/}
                 </ul>{/*end nav*/}
               </div>{/*end startbarDashboards*/}
@@ -337,321 +323,17 @@ const Test = () => {
                         <li className="nav-item">
                           <a className="nav-link" href="projects-clients.html">Clients</a>
                         </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-team.html">Team</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-project.html">Project</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-task.html">Task</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-kanban-board.html">Kanban Board</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-chat.html">Chat</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-users.html">Users</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="projects-create.html">Project Create</a>
-                        </li>{/*end nav-item*/} 
                       </ul>{/*end nav*/}
                     </div>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="#sidebarEcommerce" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEcommerce">                                        
-                      <span>Ecommerce</span>
-                    </a>
-                    <div className="collapse " id="sidebarEcommerce">
-                      <ul className="nav flex-column">
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-products.html">Products</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-customers.html">Customers</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-customer-details.html">Customer Details</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-orders.html">Orders</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-order-details.html">Order Details</a>
-                        </li>{/*end nav-item*/}
-                        <li className="nav-item">
-                          <a className="nav-link" href="ecommerce-refunds.html">Refunds</a>
-                        </li>{/*end nav-item*/}
-                      </ul>{/*end nav*/}
-                    </div>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="apps-chat.html">Chat</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="apps-contact-list.html">Contact List</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="apps-calendar.html">Calendar</a>
-                  </li>{/*end nav-item*/}  
-                  <li className="nav-item">
-                    <a className="nav-link" href="apps-invoice.html">Invoice</a>
-                  </li>{/*end nav-item*/}                                
+                  </li>{/*end nav-item*/}                          
                 </ul>{/*end nav*/}
               </div>{/*end startbarApplications*/}
             </li>{/*end nav-item*/}
-            <li className="menu-label mt-2">
-              <small className="label-border">
-                <div className="border_left hidden-xs" />
-                <div className="border_right" />
-              </small>
-              <span>Components</span>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarElements" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarElements">
-                <i className="iconoir-compact-disc menu-icon" />
-                <span>UI Elements</span>
-              </a>
-              <div className="collapse " id="sidebarElements">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-alerts.html">Alerts</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-avatar.html">Avatar</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-buttons.html">Buttons</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-badges.html">Badges</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-cards.html">Cards</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-carousels.html">Carousels</a>
-                  </li>{/*end nav-item*/}                                
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-dropdowns.html">Dropdowns</a>
-                  </li>{/*end nav-item*/}                                   
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-grids.html">Grids</a>
-                  </li>{/*end nav-item*/}                                
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-images.html">Images</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-list.html">List</a>
-                  </li>{/*end nav-item*/}                                   
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-modals.html">Modals</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-navs.html">Navs</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-navbar.html">Navbar</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-paginations.html">Paginations</a>
-                  </li>{/*end nav-item*/}   
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-popover-tooltips.html">Popover &amp; Tooltips</a>
-                  </li>{/*end nav-item*/}                                
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-progress.html">Progress</a>
-                  </li>{/*end nav-item*/}                                
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-spinners.html">Spinners</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
-                  </li>{/*end nav-item*/}                               
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-typography.html">Typography</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="ui-videos.html">Videos</a>
-                  </li>{/*end nav-item*/} 
-                </ul>{/*end nav*/}
-              </div>{/*end startbarElements*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarAdvancedUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvancedUI">
-                <i className="iconoir-peace-hand menu-icon" />
-                <span>Advanced UI</span><span className="badge rounded text-success bg-success-subtle ms-1">New</span>
-              </a>
-              <div className="collapse " id="sidebarAdvancedUI">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-animation.html">Animation</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-clipboard.html">Clip Board</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-dragula.html">Dragula</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-files.html">File Manager</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-highlight.html">Highlight</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-rangeslider.html">Range Slider</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-ratings.html">Ratings</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-ribbons.html">Ribbons</a>
-                  </li>{/*end nav-item*/}                                  
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-sweetalerts.html">Sweet Alerts</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="advanced-toasts.html">Toasts</a>
-                  </li>{/*end nav-item*/}
-                </ul>{/*end nav*/}
-              </div>{/*end startbarAdvancedUI*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarForms" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarForms">
-                <i className="iconoir-journal-page menu-icon" />
-                <span>Forms</span>
-              </a>
-              <div className="collapse " id="sidebarForms">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-elements.html">Basic Elements</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-advanced.html">Advance Elements</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-validation.html">Validation</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-wizard.html">Wizard</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-editors.html">Editors</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-uploads.html">File Upload</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="forms-img-crop.html">Image Crop</a>
-                  </li>{/*end nav-item*/}
-                </ul>{/*end nav*/}
-              </div>{/*end startbarForms*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                <i className="iconoir-candlestick-chart menu-icon" />
-                <span>Charts</span>
-              </a>
-              <div className="collapse " id="sidebarCharts">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="charts-apex.html">Apex</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="charts-justgage.html">JustGage</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="charts-chartjs.html">Chartjs</a>
-                  </li>{/*end nav-item*/} 
-                  <li className="nav-item">
-                    <a className="nav-link" href="charts-toast-ui.html">Toast</a>
-                  </li>{/*end nav-item*/} 
-                </ul>{/*end nav*/}
-              </div>{/*end startbarCharts*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
-                <i className="iconoir-table-rows menu-icon" />
-                <span>Tables</span>
-              </a>
-              <div className="collapse " id="sidebarTables">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="tables-basic.html">Basic</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="tables-datatable.html">Datatables</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="tables-editable.html">Editable</a>
-                  </li>{/*end nav-item*/} 
-                </ul>{/*end nav*/}
-              </div>{/*end startbarTables*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
-                <i className="iconoir-trophy menu-icon" />
-                <span>Icons</span>
-              </a>
-              <div className="collapse " id="sidebarIcons">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="icons-fontawesome.html">Font Awesome</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="icons-lineawesome.html">Line Awesome</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="icons-icofont.html">Icofont</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="icons-iconoir.html">Iconoir</a>
-                  </li>{/*end nav-item*/}
-                </ul>{/*end nav*/}
-              </div>{/*end startbarIcons*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMaps">
-                <i className="iconoir-navigator-alt menu-icon" />
-                <span>Maps</span>
-              </a>
-              <div className="collapse " id="sidebarMaps">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="maps-google.html">Google Maps</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="maps-leaflet.html">Leaflet Maps</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="maps-vector.html">Vector Maps</a>
-                  </li>{/*end nav-item*/} 
-                </ul>{/*end nav*/}
-              </div>{/*end startbarMaps*/}
-            </li>{/*end nav-item*/}
-            <li className="nav-item">
-              <a className="nav-link" href="#sidebarEmailTemplates" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEmailTemplates">
-                <i className="iconoir-send-mail menu-icon" />
-                <span>Email Templates</span>
-              </a>
-              <div className="collapse " id="sidebarEmailTemplates">
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link" href="email-templates-basic.html">Basic Action Email</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="email-templates-alert.html">Alert Email</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="email-templates-billing.html">Billing Email</a>
-                  </li>{/*end nav-item*/}  
-                </ul>{/*end nav*/}
-              </div>{/*end startbarEmailTemplates*/}
-            </li>{/*end nav-item*/}
+
+            
+          
+          
+             
             <li className="menu-label mt-2">
               <small className="label-border">
                 <div className="border_left hidden-xs" />
@@ -672,30 +354,11 @@ const Test = () => {
                   <li className="nav-item">
                     <a className="nav-link" href="pages-notifications.html">Notifications</a>
                   </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-timeline.html">Timeline</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-treeview.html">Treeview</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-starter.html">Starter Page</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-pricing.html">Pricing</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-blogs.html">Blogs</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-faq.html">FAQs</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="pages-gallery.html">Gallery</a>
-                  </li>{/*end nav-item*/}  
                 </ul>{/*end nav*/}
               </div>{/*end startbarPages*/}
             </li>{/*end nav-item*/}
+
+
             <li className="nav-item">
               <a className="nav-link" href="#sidebarAuthentication" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuthentication">
                 <i className="iconoir-fingerprint-lock-circle menu-icon" />
@@ -708,21 +371,6 @@ const Test = () => {
                   </li>{/*end nav-item*/}
                   <li className="nav-item">
                     <a className="nav-link" href="auth-register.html">Register</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="auth-recover-pw.html">Re-Password</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="auth-lock-screen.html">Lock Screen</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="auth-maintenance.html">Maintenance</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="auth-404.html">Error 404</a>
-                  </li>{/*end nav-item*/}
-                  <li className="nav-item">
-                    <a className="nav-link" href="auth-500.html">Error 500</a>
                   </li>{/*end nav-item*/}
                 </ul>{/*end nav*/}
               </div>{/*end startbarAuthentication*/}
